@@ -18,12 +18,6 @@
       margin: auto;
     }
 
-    .header img {
-      width: 100%;
-      border-radius: 12px;
-      margin-bottom: 20px;
-    }
-
     .card {
       background: #ffffff;
       padding: 20px;
@@ -31,12 +25,19 @@
       box-shadow: 0 6px 14px rgba(0,0,0,0.12);
     }
 
+    .date {
+      text-align: right;
+      font-size: 13px;
+      color: #666;
+      margin-bottom: 10px;
+    }
+
     .title {
       text-align: center;
       font-size: 22px;
       font-weight: bold;
       color: #1b8f3a;
-      margin-bottom: 10px;
+      margin-bottom: 12px;
     }
 
     .veg-dot {
@@ -51,28 +52,30 @@
     .info {
       font-size: 15px;
       line-height: 1.7;
-      margin-bottom: 10px;
+      margin-bottom: 12px;
     }
 
-    .menu {
+    .menu, .details {
       background: #fafafa;
       padding: 14px;
       border-radius: 10px;
+      margin-top: 12px;
+      font-size: 14px;
     }
 
     ul {
       padding-left: 18px;
+      margin: 6px 0;
     }
 
     li {
       margin-bottom: 6px;
     }
 
-    .date {
-      text-align: right;
+    .footer {
+      margin-top: 12px;
       font-size: 13px;
-      color: #666;
-      margin-bottom: 10px;
+      color: #444;
     }
   </style>
 </head>
@@ -80,12 +83,8 @@
 <body>
 
 <div class="container">
-
-  <div class="header">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Vande_Bharat_Express.jpg">
-  </div>
-
   <div class="card">
+
     <div class="date">Date: <span id="todayDate"></span></div>
 
     <div class="title">
@@ -93,7 +92,7 @@
     </div>
 
     <div class="info">
-      <strong>Train Name & No:</strong> Vande Bharat Express – 20666 <br>
+      <strong>Train Name & No:</strong> Vande Bharat Express – 20666<br>
       <strong>Category:</strong> Vegetarian
     </div>
 
@@ -108,8 +107,23 @@
         <li>Chutney (40 gms)</li>
       </ul>
     </div>
-  </div>
 
+    <div class="details">
+      <strong>Preparation & Packaging Details</strong><br><br>
+      <strong>Name of the Unit / Kitchen:</strong> BASE KITCHEN<br>
+      <strong>Supplied from:</strong> Perumal Car Street, D.No.61,<br>
+      Meenakshipuram Junction, Tirunelveli – 627001<br><br>
+
+      <strong>Licensee:</strong> M/S. P. SIVAPRASAD<br>
+      <strong>FSSAI No:</strong> 12424026001058<br>
+      <strong>GST:</strong> 33AHAPP1689H1ZA
+    </div>
+
+    <div class="footer">
+      For Immediate Consumption
+    </div>
+
+  </div>
 </div>
 
 <script>
