@@ -1,1 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vande Bharat Veg Menu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f4f7;
+      padding: 20px;
+      margin: 0;
+    }
+
+    .container {
+      max-width: 650px;
+      margin: auto;
+    }
+
+    .header img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+
+    .card {
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 14px;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+    }
+
+    .title {
+      text-align: center;
+      font-size: 22px;
+      font-weight: bold;
+      color: #1b8f3a;
+      margin-bottom: 10px;
+    }
+
+    .veg-dot {
+      width: 14px;
+      height: 14px;
+      background: green;
+      display: inline-block;
+      border-radius: 3px;
+      margin-left: 6px;
+    }
+
+    .info {
+      font-size: 15px;
+      line-height: 1.7;
+      margin-bottom: 10px;
+    }
+
+    .menu {
+      background: #fafafa;
+      padding: 14px;
+      border-radius: 10px;
+    }
+
+    ul {
+      padding-left: 18px;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    .date {
+      text-align: right;
+      font-size: 13px;
+      color: #666;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <div class="header">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Vande_Bharat_Express.jpg">
+  </div>
+
+  <div class="card">
+    <div class="date">Date: <span id="todayDate"></span></div>
+
+    <div class="title">
+      Veg Breakfast <span class="veg-dot"></span>
+    </div>
+
+    <div class="info">
+      <strong>Train Name & No:</strong> Vande Bharat Express – 20666 <br>
+      <strong>Category:</strong> Vegetarian
+    </div>
+
+    <div class="menu">
+      <strong>Menu:</strong>
+      <ul>
+        <li>Idly (100 gms) – 2 Nos</li>
+        <li>Pongal (100 gms)</li>
+        <li>Vada (30 gms)</li>
+        <li>Kesari (30 gms)</li>
+        <li>Sambar (150 gms)</li>
+        <li>Chutney (40 gms)</li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  const today = new Date();
+  const options = { day: '2-digit', month: 'long', year: 'numeric' };
+  document.getElementById("todayDate").innerText =
+    today.toLocaleDateString("en-IN", options);
+</script>
+
+</body>
+</html>
