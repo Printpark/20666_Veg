@@ -78,7 +78,16 @@
     <div class="info">
       <strong>Note :</strong> <b><i>For Immediate Consumption</i></b>
     </div>
+    <div class="info">
+  <strong>Date :</strong> <span id="todayDate"></span>
+    </div>
   </div>
+  <script>
+  const today = new Date();
+  const options = { day: 'numeric', month: 'long', year: 'numeric' };
+  document.getElementById('todayDate').textContent =
+    today.toLocaleDateString('en-IN', options);
+  </script>
 
 </body>
 </html>
